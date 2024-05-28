@@ -1,1 +1,2 @@
-import { useEffect } from 'react';
+export * from './useInterval';
+export * from './useClock';
