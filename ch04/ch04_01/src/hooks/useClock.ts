@@ -3,6 +3,9 @@ import { useInterval } from './useInterval';
 
 export const useClock = () => {
   const [time, setTime] = useState(new Date());
-  useInterval(() => setTime(new Date()));
+  useInterval(() => {
+    console.log('hook', time.toLocaleTimeString());
+    setTime(new Date());
+  });
   return time;
 };
